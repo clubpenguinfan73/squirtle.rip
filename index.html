@@ -1,214 +1,81 @@
-<html lang="en">
-  <head> <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
-    <script src="https://code.jquery.com/jquery-3.6.1.slim.js" integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>welcome..</title>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="lose.rip" />
+    <meta name="keywords" content="lose, lose#1000, lose.rip, discord.gg/lose" />
+    <meta name="author" content="lose" />
+    <meta property="og:type" content="site" />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:title" content="lose.rip" />
+    <meta property="og:description" content="you lose you lose you lose" />
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/1115716571315322951/1193253303669239900/ed0d36759faa3093af6aa2d98252630a.jpg?ex=65ac0abd&is=659995bd&hm=1112af1c49b765c165fd5d2f9e0a938ce07f12d1cbf0b719f01b34da22885df6&" />
+    <link rel="icon" type="image/x-icon" href="assets/others/icon.jpg" />
+    <meta itemprop="name" content="lose.rip" />
+    <meta itemprop="name" content="lose.rip" />
+    <meta itemprop="description" content="you lose" />
+    <meta itemprop="image" content="assets/others/icon.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="stylesheet" href="style.css" />
-    <title></title>
-    <link rel="icon" href="https://cdn.discordapp.com/emojis/1043263879297388665.gif?size=44&quality=lossless" type="image/x-icon">
-    <script>
-        var titleText = "issei";
-        var titleWords = titleText.split(" ");
-        var currentWordIndex = 0;
-        var currentWord = titleWords[currentWordIndex];
-        var currentCharIndex = 0;
-        var direction = 1;
-    
-        function updateTitle() {
-          document.title = currentWord.substring(0, currentCharIndex);
-    
-          currentCharIndex += direction;
-    
-          if (currentCharIndex < 0) {
-            currentCharIndex = 0;
-            direction = 1;
-            currentWordIndex = (currentWordIndex + 1) % titleWords.length;
-            currentWord = titleWords[currentWordIndex];
-          }
-    
-          if (currentCharIndex > currentWord.length) {
-            currentCharIndex = currentWord.length;
-            direction = -1;
-          }
-    
-          setTimeout(updateTitle, 200); // Update title every 200 milliseconds
-        }
-    
-        updateTitle();
-      </script>
-       
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-    <style>
-        body{
-            background-image: url('background.jpg');
-            height: 100vh;
-            background-size: cover;
-            background-position: center;
-            cursor: url(bloodknife1.png), auto;
-        }
-    </style>
-  </head>
-  <body oncontextmenu="return false;">
-    <style type="text/css">
-        <!--
-        BODY { cursor:url("<http://www.rw-designer.com/cursor-extern.php?id=178545>"); }
-        -->
-        </style>
-    
-    
-   <audio id="song">
-    <source src="thingone.mp3">
-   </audio>
-   <!-- now js -->
-   <script>
-    window.addEventListener('click', () => {
-        document.getElementById("song").play();
-    });
-   </script>
+    <link rel="shortcut icon" href="assets/others/icon.jpg" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+</head>
 
-    <!--1. Profile Picture -->
-    <img
-      class="profile-picture"
-      src="isseipfp.png"
-    />
+<body>
+    <!--  Congrats, You've gotten to the main html page -->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <div id="main">
+        <table class="box">
+            <tbody>
+                <tr>
+                    <td><span id="line1" style="white-space: pre;"></span></td>
+                </tr>
+                <tr>
+                    <td><span id="line2" style="white-space: pre;"></span></td>
+                </tr>
+                <tr>
+                    <td><span id="line3 space" style="white-space: pre;"></span></td>
+                </tr>
+                <tr>
+                    <td><span id="line4" style="white-space: pre;"></span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container" style="display: none;">
+        <h1 class="brand-header">
+            <a href="https://lose.rip/lose" target="_BLANK">Lose</a>
+        </h1>
+        <p><span id="brand"></span></p>
+        <p><span id='Nowplaying' style="opacity: 80%;"></span></p>
+    </div>
+    <div class="marquee-container" style="visibility: hidden;">
+        <pre>[<div id="marquee"></div>]</pre>
+    </div>
+    <div class="background" style="display: none;">
+        <div id="pattern"></div>
+    </div>
+<div class="top-right">
+        <i><a class="skip">skip</a></i>
+    </div>
+    <div class="bottom-left">
+        <i><a href="https://lose.rip/discord" target="_BLANK">Discord</a> / <a href="https://lose.rip/discord"
+                target="_BLANK">@loser774620</a></i>
+    </div>
+    <div class="footer">
+        <i><a href="https://lose.rip/lose" target="_BLANK">@lose.rip</a></i>
+    </div>
+    <script type="text/javascript" src="assets/javascript/lib/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/lib/jquery.marquee.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/lib/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/lib/typed.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/portfolio.js"></script>
+    <script type="text/javascript" src="assets/javascript/console.js"></script>
+    <script type="text/javascript" src="assets/javascript/lastfm.js"></script>
+    <!-- <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@latest/disable-devtool.min.js'></script> -->
+</body>
 
-    <!--2. Profile Name or User account -->
-
-    <div class="profile-name">@issei</div>
-
-    <!-- 3. Links -->
-
-    <a href="https://discord.gg/zoro" class="server" target="_blank" >
-        /zoro
-    </a>
-    
-
-
-    <a href="https://discord.gg/issei" class="account" target="_blank">
-        /issei
-    </a>
-    
-   <a href="https://discord.com/users/215686316543705090" target="_blank" class="discimg"> 
-    <img src="discord.png" width="40">
-   
- </a> 
- <a href="https://www.instagram.com/nzked/?next=%2F" target="_blank" class="iglink">
-    
-    <img src="ig.png" width="40">
- </a>
- <a href="https://www.tiktok.com/@gmfx" target="_blank" class="ttlink">
-    
-    <img src="tiktok.png" width="40">
- </a>
- <a href="https://t.me/testified" target="_blank" class="telelink">
-    
-    <img src="tele.png" width="40">
- </a>
- <div class='enter'>
-    <span><pre> enter (click anywhere)
-    </pre>
-    </span>
-  </div>
-
-
-<!-- code -->
-
-
-  <script>
-    $('.enter').on('click', () => {
-  $('.enter').css('display', 'none')
-  document.querySelector('.bg-video').play();
-  
-});
-    </script>
-    
-    <div id="snow"></div>
-    <style>
-        #snow {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        pointer-events: none;
-        z-index: 1000;
-        
-    }
-    </style>
-    <script>
-        document.addEventListener('DOMContentLoaded', function(){
-        var script = document.createElement('script');
-        script.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
-        script.onload = function(){
-            particlesJS("snow", {
-                "particles": {
-                    "number": {
-                        "value": 200,
-                        "density": {
-                            "enable": true,
-                            "value_area": 800
-                        }
-                    },
-                    "color": {
-                        "value": "#ffffff"
-                    },
-                    "opacity": {
-                        "value": 0.7,
-                        "random": false,
-                        "anim": {
-                            "enable": false
-                        }
-                    },
-                    "size": {
-                        "value": 5,
-                        "random": true,
-                        "anim": {
-                            "enable": false
-                        }
-                    },
-                    "line_linked": {
-                        "enable": false
-                    },
-                    "move": {
-                        "enable": true,
-                        "speed": 5,
-                        "direction": "bottom",
-                        "random": true,
-                        "straight": false,
-                        "out_mode": "out",
-                        "bounce": false,
-                        "attract": {
-                            "enable": true,
-                            "rotateX": 300,
-                            "rotateY": 1200
-                        }
-                    }
-                },
-                "interactivity": {
-                    "events": {
-                        "onhover": {
-                            "enable": false
-                        },
-                        "onclick": {
-                            "enable": false
-                        },
-                        "resize": false
-                    }
-                },
-                "retina_detect": true
-            });
-        }
-        document.head.append(script);
-    });
-    </script>
-
-    <footer class="footer">
-        <div class="footer-wrapper">
-            <p>made by issei </p>
-        </div>
-    </footer>
-  </body>
 </html>
